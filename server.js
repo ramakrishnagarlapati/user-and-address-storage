@@ -137,6 +137,7 @@ app.get("/address/:userId", (req, res) => {
     res.send({ addresses: rows });
   });
 });
+
 // start the server
 const port = 3000;
 
