@@ -106,7 +106,7 @@ app.get("/users", (req, res) => {
       return;
     }
 
-    if (!rows) {
+    if (rows.length === 0) {
       res.status(400);
       res.send({ message: "Users not found" });
     }
@@ -128,9 +128,10 @@ app.get("/address/:userId", (req, res) => {
       return;
     }
 
-    if (!rows) {
+    if (rows.length === 0) {
       res.status(400);
       res.send({ message: "address not found" });
+      return;
     }
 
     res.status(200);
