@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main-container {
+  width: 90%;
+  max-width: 550px;
+}
+.result-message {
+  margin-top: 16px;
+  font-size: 14px;
+}
